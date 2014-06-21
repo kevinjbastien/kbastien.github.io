@@ -10,20 +10,20 @@ body{
 	width:308px;
 	height:450px;
 	position: fixed;
-	top: 20%;
+	top: 15%;
 	left: 40%;
 	box-shadow:0px 2px 10px rgba(0,0,0,.5);
 }
 
 .profile-img{
-	margin-top: -2px;
+	width:308px;
 }
 
 .name{
 	margin-bottom: 0px;
 	margin-top: 1px;
 	font-weight: 300;
-	color: #666666;
+	color: #545454;
 }
 
 .location-icon{
@@ -45,7 +45,7 @@ p#desc-one{
 p#desc-two {
 font-size: small;
 font-weight: 300;
-margin-bottom: 60px;
+margin-bottom: 50px;
 margin-top: 20px;
 }
 
@@ -54,7 +54,7 @@ margin-top: 20px;
 	margin-right: 2px;
 }
 
-.social li {display: inline-block; margin-top: 5px}
+.social li {display: inline-block; }
 
 ul{
 	margin-left: -30px;
@@ -91,6 +91,6 @@ footer{
 	position: fixed;
 	bottom:0;
 	text-align: center;
-	margin-left: 46%;
+	margin-left: 47%;
 	margin-bottom: 5px;
 }
