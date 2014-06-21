@@ -96,12 +96,4 @@ footer{
 	margin-bottom: 5px;
 }
 
-@media (max-width: 600px) {
-  .box{
-  	left:12%;
-  }
-
-  footer{
-  	margin-left: 35%;
-  }
 }
