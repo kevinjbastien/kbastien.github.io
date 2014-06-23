@@ -96,3 +96,27 @@ footer{
 	margin-left: 47%;
 	margin-bottom: 5px;
 }
+
+@media screen and (max-width:480px){
+
+.box{
+	background-color: white;
+	width:308px;
+	height:450px;
+	position: fixed;
+	top: 15%;
+	left: 12%;
+	box-shadow:0px 2px 10px rgba(0,0,0,.5);
+}
+
+footer{
+	font-size: small;
+	color: white;
+	font-weight: 100;
+	position: fixed;
+	bottom:0;
+	text-align: center;
+	margin-left: 32%;
+	margin-bottom: 5px;
+}
+}
