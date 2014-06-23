@@ -31,6 +31,7 @@ body{
 .location-icon{
 	width: .9em;
 	margin-right: 1px;
+	margin-top:-4px;
 }
 
 .location{
@@ -54,6 +55,7 @@ margin-top: 20px;
 .green-dot{
 	width:10px;
 	margin-right: 2px;
+	margin-top:-4px;
 }
 
 .social li {display: inline-block; }
@@ -93,7 +95,7 @@ footer{
 	position: fixed;
 	bottom:0;
 	text-align: center;
-	margin-left: 46%;
+	margin-left: 45%;
 	margin-bottom: 5px;
 }
 
@@ -101,6 +103,8 @@ footer{
 
 body{
 	background: none;
+	top: 0%;
+	left:0%;
 }
 
 .box{
