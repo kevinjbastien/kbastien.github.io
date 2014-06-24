@@ -98,6 +98,14 @@ footer{
 	margin-left: 45%;
 	margin-bottom: 5px;
 }
+@media all and (min-width:480px) and (max-width:767px){
+	.box{
+		left: 30%;
+	}
+	footer{
+		margin-left: 42%;
+	}
+}
 
 @media all and (max-width:480px){
 
