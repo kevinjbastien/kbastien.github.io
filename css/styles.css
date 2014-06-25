@@ -94,16 +94,11 @@ footer{
 	font-weight: 100;
 	position: fixed;
 	bottom:0;
-	text-align: center;
-	margin-left: 45%;
-	margin-bottom: 5px;
 }
+
 @media all and (min-width:480px) and (max-width:767px){
 	.box{
 		left: 30%;
-	}
-	footer{
-		margin-left: 42%;
 	}
 }
 
@@ -131,9 +126,6 @@ footer{
 	font-weight: 100;
 	position: fixed;
 	bottom:0;
-	text-align: center;
-	margin-left: 32%;
-	margin-bottom: 5px;
 }
 }
 
