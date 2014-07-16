@@ -22,6 +22,7 @@ body{
 }
 
 .name{
+	font-size: 1.5em;
 	margin-bottom: 0px;
 	margin-top: 1px;
 	font-weight: 300;
@@ -38,6 +39,7 @@ body{
 	margin-top: 1px;
 	margin-right: 7px;
 	font-weight: 300;
+	font-size: .8em;
 }
 
 p#desc-one{
