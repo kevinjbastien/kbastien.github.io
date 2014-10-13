@@ -1,4 +1,4 @@
-kbastien.github.io
+kevinbastien.com
 ==================
 
 Personal Page
