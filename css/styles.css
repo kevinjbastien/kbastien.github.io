@@ -130,7 +130,7 @@ footer{
 	bottom:0;
 }
 
-.error img {
+.error-img img {
   /* Set up proportionate scaling */
   width: 100%;
   height: 100%;
@@ -138,5 +138,6 @@ footer{
   /* Set up positioning */
   position: absolute;
 }
+
 
 
