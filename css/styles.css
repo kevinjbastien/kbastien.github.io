@@ -21,6 +21,14 @@ body{
 	width:308px;
 }
 
+i {
+	color: #A0A0A0;
+}
+
+.fa {
+	margin-left: 8px;
+}
+
 .name{
 	font-size: 1.5em;
 	margin-bottom: 0px;
@@ -66,32 +74,9 @@ ul{
 	margin-left: -30px;
 }
 
-.linkedin{
-	width:20px;
-}
 
-.social img{
+a:hover i{
 	opacity: .7;
-}
-
-a:hover img{
-	opacity: 1;
-}
-
-.twitter{
-	width:30px;
-}
-
-.github{
-	width:25px;
-}
-
-.email{
-	width:26px;
-}
-
-.mtf{
-	width:25px;
 }
 
 footer{
