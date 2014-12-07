@@ -7,15 +7,6 @@ body{
 	width:100%;
 }
 
-.box{
-	background-color: white;
-	width:308px;
-	height:450px;
-	position: fixed;
-	top: 15%;
-	left: 40%;
-	box-shadow:0px 2px 10px rgba(0,0,0,.5);
-}
 
 .profile-img{
 	width:308px;
@@ -102,30 +93,78 @@ body .error-img img{
 
 @media all and (max-width:480px){
 
-body{
-	background: none;
+	body{
+		background: none;
+	}
+
+
+	.profile-img{
+		width: 100%;
+	}
+
+	footer{
+		font-size: small;
+		color: #808080;
+		font-weight: 100;
+		position: fixed;
+		bottom:0;
+	}
 }
 
+/*Flip card animation*/
 .box{
-	box-shadow: none;
-	width: 100%;
-	height: auto;
-	top: 0%;
-	left:0%;
-}
-
-.profile-img{
-	width: 100%;
-}
-
-footer{
-	font-size: small;
-	color: #808080;
-	font-weight: 100;
+	background-color: white;
+	width:308px;
+	height:450px;
 	position: fixed;
-	bottom:0;
-}
+	top: 15%;
+	left: 40%;
+	box-shadow:0px 2px 10px rgba(0,0,0,.5);
+	cursor: pointer;
+
+	/* Set the transition effects */
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	-o-transition: -o-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
 }
 
+.box .back{
+	-webkit-transform: rotateY( 180deg );
+	-moz-transform: rotateY( 180deg );
+	-o-transform: rotateY( 180deg );
+	transform: rotateY( 180deg );
+}
 
+.box.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.box .front,
+.box .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.animation {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.box .back .content p{
+	margin-bottom: 10px; 
+}
 

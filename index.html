@@ -31,30 +31,49 @@ ga('send', 'pageview');
 </script>
 </head>
 <body>
-  <div class="row">
-    <div class="box">
-      <div class="inner-content">
-        <img class="profile-img" alt="Kevin Bastien" src="assets/kevin-bastien.png">
-        <h1 class="name" id="name">Kevin Bastien</h1>
-        <h2 class="location"><img class="location-icon" src="icons/location.png">Portland, OR</h2>
-          <p class="description" id="desc-one"><img class="green-dot" src="icons/green-dot.svg">Currently available to Freelance</p>
-          <p class="description" id="desc-two">Developer and Designer, attending the <br>University of Portland.</p>
-       
-        <div class="social">
-          <ul>
-            <li><a href="https://www.linkedin.com/pub/kevin-bastien/68/20b/49b"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            <li><a href="http://twitter.com/kevinjbastien"  class="button"><i class="fa fa-twitter fa-lg"></i></li> 
-            <li><a href="http://github.com/kbastien"  class="button"><i class="fa fa-github fa-lg"></i></a></li>
-            <li><a href="mailto:kevin@universityinnovation.org"  class="button"><i class="fa fa-envelope"></i></a></li> 
-            <li><a href="http://meetthefounder.co"  class="button"><i class="fa fa-pencil"></i></a></li>  
-          </ul>
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <!-- Front of card -->
+          <div class="front">
+            <div class="inner-content">
+              <img class="profile-img" alt="Kevin Bastien" src="assets/kevin-bastien.png">
+              <h1 class="name" id="name">Kevin Bastien</h1>
+              <h2 class="location"><img class="location-icon" src="icons/location.png">Portland, OR</h2>
+                <p class="description" id="desc-one"><img class="green-dot" src="icons/green-dot.svg">Currently available to Freelance</p>
+                <p class="description" id="desc-two">Developer and Designer, attending the <br>University of Portland.</p>
+              </div>             
+              <div class="social">
+                <ul>
+                  <li><a href="https://www.linkedin.com/pub/kevin-bastien/68/20b/49b"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                  <li><a href="http://twitter.com/kevinjbastien"  class="button"><i class="fa fa-twitter fa-lg"></i></li> 
+                  <li><a href="http://github.com/kbastien"  class="button"><i class="fa fa-github fa-lg"></i></a></li>
+                  <li><a href="mailto:kevin@universityinnovation.org"  class="button"><i class="fa fa-envelope"></i></a></li> 
+                  <li><a href="http://meetthefounder.co"  class="button"><i class="fa fa-pencil"></i></a></li>  
+                </ul>
+              </div>
+            </div>
+          
+            <!-- Back of Card (Project Section) -->
+            <div class="back">
+              <div class="content"> 
+                <h2>Back</h2>
+                <p>This is how we do it!</p>
+              </div>
+            </div>
+          
+
+          </div>
         </div>
       </div>
-      </div>
-<!--     
-    <div class="col-md-12">
-      <p>&copy 2014 Kevin Bastien</p>
-    </div> -->
     </div>
+
+
+
+  <script type="text/javascript">
+    $('.box').click(function(){
+      $(this).toggleClass('flipped');
+    });
+  </script>
 </body>
 </html>
