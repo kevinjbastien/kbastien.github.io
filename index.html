@@ -15,7 +15,7 @@
 
 <!-- Personal Style Sheet, Fonts, Favicon -->
 <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/compiled/styles.css">
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 <!-- GA Script -->
@@ -31,30 +31,46 @@ ga('send', 'pageview');
 </script>
 </head>
 <body>
-  <div class="row">
-    <div class="box">
-      <div class="inner-content">
-        <img class="profile-img" alt="Kevin Bastien" src="assets/kevin-bastien.png">
-        <h1 class="name" id="name">Kevin Bastien</h1>
-        <h2 class="location"><img class="location-icon" src="icons/location.png">Portland, OR</h2>
-          <p class="description" id="desc-one"><img class="green-dot" src="icons/green-dot.svg">Currently available to Freelance</p>
-          <p class="description" id="desc-two">Developer and Designer, attending the <br>University of Portland.</p>
-       
-        <div class="social">
-          <ul>
-            <li><a href="https://www.linkedin.com/pub/kevin-bastien/68/20b/49b"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            <li><a href="http://twitter.com/kevinjbastien"  class="button"><i class="fa fa-twitter fa-lg"></i></li> 
-            <li><a href="http://github.com/kbastien"  class="button"><i class="fa fa-github fa-lg"></i></a></li>
-            <li><a href="mailto:kevin@universityinnovation.org"  class="button"><i class="fa fa-envelope"></i></a></li> 
-            <li><a href="http://meetthefounder.co"  class="button"><i class="fa fa-pencil"></i></a></li>  
-          </ul>
+  <div class="card-container">
+    <div class="card">
+      <div class="face">
+            <img class="profile-img" alt="Kevin Bastien" src="assets/kevin-bastien.png">
+            <h1 class="name" id="name">Kevin Bastien</h1>
+            <h2 class="location"><img class="location-icon" src="icons/location.png">Portland, OR</h2>
+            <p class="description" id="desc-one"><img class="green-dot" src="icons/green-dot.svg">Currently available to Freelance</p>
+            <p class="description" id="desc-two">Developer and Designer, attending the <br>University of Portland.</p>
+            <div class="social">
+              <ul>
+                <li><a href="#"  class="derp"><i class="fa fa-code fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/pub/kevin-bastien/68/20b/49b"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                <li><a href="http://twitter.com/kevinjbastien"  class="button"><i class="fa fa-twitter fa-lg"></i></li> 
+                <li><a href="http://github.com/kbastien"  class="button"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="mailto:kevin@universityinnovation.org"  class="button"><i class="fa fa-envelope"></i></a></li> 
+                <li><a href="http://meetthefounder.co"  class="button"><i class="fa fa-pencil fa-lg"></i></a></li>
+              </ul>
+            </div>  
+          </div>        
+
+
+        <!-- Back of Card (Project Section) -->
+        <div class="face back">
+          <div class="content">
+            <h4 class="text-center">Recent Projects</h4>
+            <ul>
+              <li><a href="http://kevinbastien.com/workfromapp/splash/">Workfrom Rewards</a></li>
+              <li><a href="http://kevinbastien.com/powerhour">Power Hour</a></li>
+              <li><a href="http://audibilityheadphones.com">Audibility</a></li>
+              <li><a href="http://sparkchat.us/">Spark</a></li>
+            </ul>
+            <div class="pointer text-center"><a href="#"  class="derp"><i class="fa fa-hand-o-left fa-3x"></i></a></div>
+          </div> 
         </div>
       </div>
-      </div>
-<!--     
-    <div class="col-md-12">
-      <p>&copy 2014 Kevin Bastien</p>
-    </div> -->
     </div>
+    <script type="text/javascript">
+    $('.derp').on('click', function () {
+      $('.card').toggleClass('flipped');
+    });
+    </script>
 </body>
 </html>
