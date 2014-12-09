@@ -68,12 +68,15 @@ body .error-img img {
     background: none; }
 
   .card-container, .card {
-    transform: rotate(180) !important;
+    transform: rotate(0) !important;
     width: 100% !important;
     height: 100% !important;
     top: 0% !important;
     left: 0% !important;
     margin-left: 0 !important; }
+
+  .back {
+    transform: rotate(180) !important; }
 
   .profile-img {
     width: 100%; } }
