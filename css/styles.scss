@@ -3,7 +3,9 @@ body{
 	text-align: center;
 	font-family: sans-serif;
 	color: #808080;
-	width:100%;
+	width:308px;
+	margin: 0 auto;
+	padding:0;
 }
 
 
@@ -99,6 +101,7 @@ body .error-img img{
 		top: 0% !important;
 		left:0% !important;
 		margin-left: 0 !important;
+		margin-top: 0 !important;
 	}
 
 	.back {
@@ -117,9 +120,7 @@ body .error-img img{
 	perspective: 1000;
 	width:308px;
 	height:450px;
-	top: 15%;
-	left: 50%;
-	margin-left: -100px;
+	margin: 130px 0 40px 0;
 	cursor: pointer;
 	position: absolute;
 }
