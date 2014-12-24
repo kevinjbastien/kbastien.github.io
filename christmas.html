@@ -19,7 +19,8 @@
     <!-- Personal Style Sheet, Fonts, Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/compiled/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+
 
   </head>
   <body id="christmas">
@@ -39,7 +40,12 @@
   <script type="text/javascript">
     $(document).snowfall({image :"assets/flake.png", minSize: 5, maxSize:15, flakeCount : 100, maxSpeed : 10});
     $.fx.speeds._default = 50000;
-    $('.santa').transition({ x: 4000, y: -500 });
+    var i = 0;
+    while(i < 100){
+      $('.santa').transition({ x: 4000, y: -500 });  
+      i++;
+    }
+    
 
   </script>
 </html>

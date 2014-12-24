@@ -132,11 +132,12 @@ a:hover i {
   background: none;
   background-color: #083F7F;
   width: 100%;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Rochester', sans-serif; }
 
 .merry-txt {
   color: white;
-  margin-top: 5em; }
+  font-size: 70px;
+  margin-top: 3em; }
 
 .ground {
   background: white;
@@ -217,7 +218,7 @@ a:hover i {
 
 .santa {
   width: 15em;
-  margin-left: -100em;
+  margin-left: -120em;
   margin-top: 10em; }
 
 /*# sourceMappingURL=styles.css.map */
