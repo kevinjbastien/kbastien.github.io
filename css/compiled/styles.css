@@ -215,7 +215,9 @@ a:hover i {
   left: 50%;
   margin-left: -15em; }
 
-.mountains {
-  position: relative; }
+.santa {
+  width: 15em;
+  margin-left: -100em;
+  margin-top: 10em; }
 
 /*# sourceMappingURL=styles.css.map */
