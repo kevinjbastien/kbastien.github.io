@@ -124,4 +124,93 @@ a:hover i {
 .flipped {
   transform: rotateY(180deg); }
 
+#christmas {
+  background: none;
+  background-color: #083F7F;
+  font-family: 'Raleway', sans-serif; }
+
+.merry-txt {
+  color: white;
+  margin-top: 5em; }
+
+.ground {
+  background: white;
+  border-radius: 85% 85% 0 0;
+  bottom: -30px;
+  height: 11em;
+  left: -20px;
+  position: fixed;
+  right: -20px; }
+
+.mountain1 {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 220px solid #2E547F;
+  bottom: 7em; }
+  .mountain1 .mountain-top1 {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #4A87CB; }
+
+.mountain2 {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  left: 10em;
+  border-left: 240px solid transparent;
+  border-right: 240px solid transparent;
+  border-bottom: 300px solid #2E547F;
+  bottom: 5em; }
+  .mountain2 .mountain-top2 {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #4A87CB; }
+
+.mountain3 {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  right: 15em;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 260px solid #2E547F;
+  bottom: 5em; }
+  .mountain3 .mountain-top3 {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #4A87CB; }
+
+.cabin img {
+  width: 30em;
+  margin-top: 18em;
+  position: absolute;
+  right: 32em; }
+
 /*# sourceMappingURL=styles.css.map */
