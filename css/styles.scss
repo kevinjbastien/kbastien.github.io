@@ -117,6 +117,11 @@ a:hover i{
 		width: 100%;
 	}
 
+	.cabin img {
+		width: 20em !important;
+		margin-top: 25em !important;
+	}
+
 }
 
 /*Flip card animation*/
@@ -194,8 +199,6 @@ a:hover i{
 	position:absolute;
 	bottom: 10rem;
 	z-index: -1;
-	width: 0px;
-	height: 0px;
 	left: 20rem;
 	border-left: 160px solid transparent;
 	border-right: 160px solid transparent;
@@ -218,8 +221,7 @@ a:hover i{
 	position:absolute;
 	bottom: 10rem !important;
 	z-index: -1;
-	width: 0px;
-	height: 0px;
+
 	left: 35rem;
 	border-left: 240px solid transparent;
 	border-right: 240px solid transparent;
@@ -243,8 +245,6 @@ a:hover i{
 	position:absolute;
 	bottom: 10rem;
 	z-index: -1;
-	width: 0px;
-	height: 0px;
 	left:60rem;
 	border-left: 200px solid transparent;
 	border-right: 200px solid transparent;
@@ -264,14 +264,12 @@ a:hover i{
 }
 
 .cabin {
+	position: relative;
 	img {
 		width: 30em;
 		margin-top: 18em;
-		position: absolute;
-		left: 30em;
 	}
 }
-
 
 
 
