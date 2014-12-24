@@ -227,4 +227,10 @@ a:hover i {
   margin-left: -120em;
   margin-top: 10em; }
 
+.glyphicon-heart {
+  color: red; }
+
+.xmas .navbar {
+  border: none; }
+
 /*# sourceMappingURL=styles.css.map */
