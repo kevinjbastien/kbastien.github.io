@@ -1,7 +1,3 @@
-html, body, #wrapper {
-  width: 100%;
-  min-height: 100%; }
-
 body {
   background: url("../../assets/background-web.jpg") no-repeat center center fixed;
   text-align: center;
@@ -131,6 +127,7 @@ a:hover i {
 #christmas {
   background: none;
   background-color: #083F7F;
+  width: 100%;
   font-family: 'Raleway', sans-serif; }
 
 .merry-txt {
@@ -148,14 +145,15 @@ a:hover i {
 
 .mountain1 {
   position: absolute;
-  bottom: 0;
+  bottom: 10rem;
   z-index: -1;
   width: 0px;
   height: 0px;
+  left: 20rem;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   border-bottom: 220px solid #2E547F;
-  bottom: 7em; }
+  bottom: 5em; }
   .mountain1 .mountain-top1 {
     position: absolute;
     top: 0px;
@@ -169,11 +167,11 @@ a:hover i {
 
 .mountain2 {
   position: absolute;
-  bottom: 0;
+  bottom: 10rem !important;
   z-index: -1;
   width: 0px;
   height: 0px;
-  left: 10em;
+  left: 35rem;
   border-left: 240px solid transparent;
   border-right: 240px solid transparent;
   border-bottom: 300px solid #2E547F;
@@ -191,15 +189,14 @@ a:hover i {
 
 .mountain3 {
   position: absolute;
-  bottom: 0;
+  bottom: 10rem;
   z-index: -1;
   width: 0px;
   height: 0px;
-  right: 15em;
+  left: 60rem;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-bottom: 260px solid #2E547F;
-  bottom: 5em; }
+  border-bottom: 260px solid #2E547F; }
   .mountain3 .mountain-top3 {
     position: absolute;
     top: 0px;
@@ -215,6 +212,6 @@ a:hover i {
   width: 30em;
   margin-top: 18em;
   position: absolute;
-  right: 32em; }
+  left: 30em; }
 
 /*# sourceMappingURL=styles.css.map */
