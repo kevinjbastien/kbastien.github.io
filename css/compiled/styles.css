@@ -148,10 +148,11 @@ a:hover i {
   right: -20px; }
 
 .mountain1 {
-  position: absolute;
-  bottom: 10rem;
+  position: fixed;
+  bottom: 0;
   z-index: -1;
-  left: 20rem;
+  left: 50%;
+  margin-left: -380px;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   border-bottom: 220px solid #2E547F;
@@ -168,10 +169,11 @@ a:hover i {
     border-bottom: 40px solid #4A87CB; }
 
 .mountain2 {
-  position: absolute;
-  bottom: 10rem !important;
+  position: fixed;
+  bottom: 10rem;
   z-index: -1;
-  left: 35rem;
+  margin-left: -240px;
+  left: 50%;
   border-left: 240px solid transparent;
   border-right: 240px solid transparent;
   border-bottom: 300px solid #2E547F;
@@ -188,10 +190,11 @@ a:hover i {
     border-bottom: 40px solid #4A87CB; }
 
 .mountain3 {
-  position: absolute;
-  bottom: 10rem;
+  position: fixed;
+  bottom: 0;
   z-index: -1;
-  left: 60rem;
+  left: 50%;
+  margin-left: 0px;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
   border-bottom: 260px solid #2E547F; }
@@ -212,5 +215,8 @@ a:hover i {
   bottom: 50px;
   left: 50%;
   margin-left: -15em; }
+
+.mountains {
+  position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
