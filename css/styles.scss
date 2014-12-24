@@ -117,9 +117,10 @@ a:hover i{
 		width: 100%;
 	}
 
-	.cabin img {
+	.cabin{
 		width: 20em !important;
-		margin-top: 25em !important;
+		margin-left: -10em !important;
+
 	}
 
 }
@@ -263,13 +264,17 @@ a:hover i{
 	}
 }
 
+
 .cabin {
-	position: relative;
-	img {
-		width: 30em;
-		margin-top: 18em;
-	}
+	position: fixed;
+	width: 30em;
+	bottom: 50px;
+	left: 50%;
+  	margin-left: -15em;
 }
+
+
+
 
 
 

@@ -87,9 +87,9 @@ a:hover i {
   .profile-img {
     width: 100%; }
 
-  .cabin img {
+  .cabin {
     width: 20em !important;
-    margin-top: 25em !important; } }
+    margin-left: -10em !important; } }
 /*Flip card animation*/
 .card-container {
   position: relative;
@@ -207,9 +207,10 @@ a:hover i {
     border-bottom: 40px solid #4A87CB; }
 
 .cabin {
-  position: relative; }
-  .cabin img {
-    width: 30em;
-    margin-top: 18em; }
+  position: fixed;
+  width: 30em;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -15em; }
 
 /*# sourceMappingURL=styles.css.map */
