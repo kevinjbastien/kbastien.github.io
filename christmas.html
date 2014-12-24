@@ -39,13 +39,8 @@
   </body>
   <script type="text/javascript">
     $(document).snowfall({image :"assets/flake.png", minSize: 5, maxSize:15, flakeCount : 100, maxSpeed : 10});
+    $('.merry-txt').transition({});
     $.fx.speeds._default = 50000;
-    var i = 0;
-    while(i < 100){
-      $('.santa').transition({ x: 4000, y: -500 });  
-      i++;
-    }
-    
-
+    $('.santa').transition({ x: 4000, y: -500 });
   </script>
 </html>

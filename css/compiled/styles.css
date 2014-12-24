@@ -89,7 +89,13 @@ a:hover i {
 
   .cabin {
     width: 20em !important;
-    margin-left: -10em !important; } }
+    margin-left: -10em !important; }
+
+  .merry-txt {
+    font-size: 30px !important; }
+
+  .santa {
+    width: 7em !important; } }
 /*Flip card animation*/
 .card-container {
   position: relative;
