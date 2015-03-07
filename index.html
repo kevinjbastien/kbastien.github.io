@@ -85,7 +85,7 @@ ga('send', 'pageview');
 
   <!-- Giphy API -->
   <script type="text/javascript">
-    var giphy = $.get("http://api.giphy.com/v1/gifs/search?q=celebrate&api_key=dc6zaTOxFJmzC&limit=70");
+    var giphy = $.get("http://api.giphy.com/v1/gifs/search?q=celebrate&rating=g&api_key=dc6zaTOxFJmzC&limit=70");
     giphy.done(function(data) { 
       var rando = Math.floor((Math.random() * 49) + 1);
       console.log(data.data[rando].images.original.url);
