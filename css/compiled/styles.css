@@ -1,3 +1,31 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 99;
+  /* stay on top */ }
+  #preloader #background img {
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  #preloader .loader {
+    color: white;
+    margin-top: 250px; }
+  #preloader h3 {
+    font-size: 45px; }
+
 body {
   background: url("../../assets/background-web.jpg") no-repeat center center fixed;
   text-align: center;
@@ -11,7 +39,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%; }
 
