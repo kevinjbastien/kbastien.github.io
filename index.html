@@ -70,6 +70,9 @@ ga('send', 'pageview');
     if(weekend < 1){
       $('.days').append("<h3>Smile, it's the weekend :)");
     }
+    else if(weekend == 1){
+      $(".days").append("<h3>Hang in there. " + weekend + " more day until the weekend :)</h3>");
+    }
     else{
       $(".days").append("<h3>Hang in there. " + weekend + " more days until the weekend :)</h3>");
     }
