@@ -48,6 +48,9 @@ body {
 i {
   color: #A0A0A0; }
 
+a {
+  color: #808080; }
+
 i.fa {
   margin-left: 8px; }
   i.fa .fa-code {
@@ -60,16 +63,11 @@ i.fa {
   font-weight: 300;
   color: #545454; }
 
-.location-icon {
-  width: .9em;
-  margin-right: 1px;
-  margin-top: -4px; }
-
 .location {
-  margin-top: 1px;
+  margin-top: 2px;
   margin-right: 7px;
   font-weight: 300;
-  font-size: .8em; }
+  font-size: 13px; }
 
 p#desc-one {
   font-size: small;
@@ -93,6 +91,11 @@ ul {
   margin-left: -50px; }
 
 a:hover i {
+  opacity: .7; }
+
+a:hover {
+  text-decoration: none;
+  color: #A0A0A0;
   opacity: .7; }
 
 @media all and (max-width: 480px) {

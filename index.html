@@ -44,17 +44,19 @@ ga('send', 'pageview');
       <div class="face">
         <img class="profile-img" alt="Kevin Bastien" src="assets/kevin-bastien.png">
         <h1 class="name" id="name">Kevin Bastien</h1>
-        <h2 class="location"><img class="location-icon" src="icons/location.png">Portland, OR</h2>
+        <div class="location">
+          <div id="current"></div>
+        </div>
         <p class="description" id="desc-one"><img class="green-dot" src="icons/green-dot.svg">Currently available to Freelance</p>
         <p class="description" id="desc-two">Developer and Designer, attending the <br>University of Portland.</p>
         <div class="social">
           <ul>
             <!-- <li class="hidden-xs"><a href="#"  class="derp"><i class="fa fa-code fa-lg"></i></a></li> -->
-            <li><a href="https://www.linkedin.com/pub/kevin-bastien/68/20b/49b"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            <li><a href="http://twitter.com/kevinjbastien"  class="button"><i class="fa fa-twitter fa-lg"></i></li> 
-            <li><a href="http://github.com/kbastien"  class="button"><i class="fa fa-github fa-lg"></i></a></li>
-            <li><a href="mailto:kevinjbastien@gmail.com"  class="button"><i class="fa fa-envelope"></i></a></li> 
-            <li><a href="http://meetthefounder.co"  class="button"><i class="fa fa-pencil fa-lg"></i></a></li>
+            <li><a href="https://www.linkedin.com/pub/kevin-bastien/68/20b/49b" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            <li><a href="http://twitter.com/kevinjbastien"  class="button" target="_blank"><i class="fa fa-twitter fa-lg"></i></li> 
+            <li><a href="http://github.com/kbastien"  class="button" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+            <li><a href="mailto:kevinjbastien@gmail.com"  class="button" target="_blank"><i class="fa fa-envelope"></i></a></li> 
+            <li><a href="http://meetthefounder.co"  class="button" target="_blank"><i class="fa fa-pencil fa-lg"></i></a></li>
           </ul>
         </div>  
       </div>        
@@ -66,7 +68,6 @@ ga('send', 'pageview');
     var d = new Date();
     var n = d.getDay();
     var weekend = 6 - n;
-    console.log(n);
     if(weekend < 1){
       $('.days').append("<h3>Smile, it's the weekend :)");
     }
@@ -91,13 +92,22 @@ ga('send', 'pageview');
     var giphy = $.get("http://api.giphy.com/v1/gifs/search?q=celebrate&rating=g&api_key=dc6zaTOxFJmzC&limit=70");
     giphy.done(function(data) { 
       var rando = Math.floor((Math.random() * 49) + 1);
-      console.log(data.data[rando].images.original.url);
       $(document).ready(function(){
         $('#background').append("<img src='"+ data.data[rando].images.original.url + "'> ");
       });
-      console.log(data.data[rando].caption)
-
     }); 
+  </script>
+
+  <script type="text/javascript">
+  var foursquare = $.getJSON("https://api.foursquare.com/v2/users/self?oauth_token=BPBIQXCNXS3X5LAL2T2IHHY1V4QRA3Z4FYUVDXYSDT0DMS5P&v=20150313");
+  foursquare.done(function(data) {
+    console.log(data.response.user.checkins.items[0].venue.name);
+    var name = data.response.user.checkins.items[0].venue.name;
+    var locID = data.response.user.checkins.items[0].venue.id;
+    $('#current').append(
+      "<a href='https://foursquare.com/v/"+ name +"/"+ locID +
+      "' target='_blank'><h2 class='location'><i class='fa fa-map-marker'></i> "+ data.response.user.checkins.items[0].venue.name + "</h2></a>");
+  });
   </script>
 </body>
 </html>
