@@ -67,8 +67,9 @@ ga('send', 'pageview');
   <script type="text/javascript">
     var d = new Date();
     var n = d.getDay();
+    console.log(n);
     var weekend = 6 - n;
-    if(weekend < 1){
+    if(weekend < 1 || weekend == 6){
       $('.days').append("<h3>Smile, it's the weekend :)");
     }
     else if(weekend == 1){
@@ -98,6 +99,7 @@ ga('send', 'pageview');
     }); 
   </script>
 
+  <!-- Foursquare Check Ins -->
   <script type="text/javascript">
   var foursquare = $.getJSON("https://api.foursquare.com/v2/users/self?oauth_token=BPBIQXCNXS3X5LAL2T2IHHY1V4QRA3Z4FYUVDXYSDT0DMS5P&v=20150313");
   foursquare.done(function(data) {
