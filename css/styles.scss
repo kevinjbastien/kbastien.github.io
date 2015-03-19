@@ -37,7 +37,7 @@
 body{
 	background: url("../../assets/background-web.jpg") no-repeat center center fixed;
 	text-align: center;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;;
 	color: #808080;
 	width:308px;
 	margin: 0 auto;
@@ -82,11 +82,12 @@ i.fa {
 	color: #545454;
 }
 
-.location{
-	margin-top: 2px;
-	margin-right: 7px;
-	font-weight: 300;
-	font-size: 12px;
+.location {
+  margin-top: 5px;
+  margin-right: 7px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 p#desc-one{
@@ -95,10 +96,10 @@ p#desc-one{
 }
 
 p#desc-two {
-font-size: small;
-font-weight: 300;
-margin-bottom: 50px;
-margin-top: 20px;
+	font-size: small;
+	font-weight: 300;
+	margin-bottom: 50px;
+	margin-top: 15px;
 }
 
 .green-dot{

@@ -16,7 +16,7 @@
 <!-- Personal Style Sheet, Fonts, Favicon -->
 <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/compiled/styles.css">
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
 <!-- GA Script -->
 <script>
@@ -45,6 +45,7 @@ ga('send', 'pageview');
         <img class="profile-img" alt="Kevin Bastien" src="assets/kevin-bastien.png">
         <h1 class="name" id="name">Kevin Bastien</h1>
         <div class="location">
+          <div id="numCheckins"></div>
           <div id="current"></div>
         </div>
         <p class="description" id="desc-one"><img class="green-dot" src="icons/green-dot.svg">Currently available to Freelance</p>
@@ -103,12 +104,13 @@ ga('send', 'pageview');
   <script type="text/javascript">
   var foursquare = $.getJSON("https://api.foursquare.com/v2/users/self?oauth_token=BPBIQXCNXS3X5LAL2T2IHHY1V4QRA3Z4FYUVDXYSDT0DMS5P&v=20150313");
   foursquare.done(function(data) {
-    console.log(data.response.user.checkins.items[0].venue.name);
     var name = data.response.user.checkins.items[0].venue.name;
     var locID = data.response.user.checkins.items[0].venue.id;
+    var numCheckins = data.response.user.checkins.count;
     $('#current').append(
       "<a href='https://foursquare.com/v/"+ name +"/"+ locID +
-      "' target='_blank'><h2 class='location'><i class='fa fa-map-marker'></i> Check-In: "+ data.response.user.checkins.items[0].venue.name + "</h2></a>");
+      "' target='_blank'><h2 class='location'><i class='fa fa-map-marker'></i> Last seen at: "+ data.response.user.checkins.items[0].venue.name + "</h2></a>");
+    // $('#numCheckins').append("<p>Portland, OR ● " + numCheckins + " Check-ins</p>");
   });
   </script>
 </body>
