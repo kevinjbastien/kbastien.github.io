@@ -108,7 +108,7 @@ ga('send', 'pageview');
     var locID = data.response.user.checkins.items[0].venue.id;
     $('#current').append(
       "<a href='https://foursquare.com/v/"+ name +"/"+ locID +
-      "' target='_blank'><h2 class='location'><i class='fa fa-map-marker'></i> "+ data.response.user.checkins.items[0].venue.name + "</h2></a>");
+      "' target='_blank'><h2 class='location'><i class='fa fa-map-marker'></i> Check-In: "+ data.response.user.checkins.items[0].venue.name + "</h2></a>");
   });
   </script>
 </body>
