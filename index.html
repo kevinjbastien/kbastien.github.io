@@ -31,13 +31,13 @@ ga('send', 'pageview');
 </script>
 </head>
 <body >
-  <div id="preloader">
+<!--   <div id="preloader">
     <div id="background"></div>
       <div class="text-center">
         <div class="loader days"></div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="card-container">
     <div class="card">
@@ -82,23 +82,23 @@ ga('send', 'pageview');
   </script>
   
   <!-- Preloader functionality -->
-  <script type="text/javascript">
-    $(window).load(function() { // makes sure the whole site is loaded
-      $('#preloader').delay(4750).fadeOut('fast'); // will fade out the white DIV that covers the website.
-      $('body').delay(350).css({'overflow':'visible'});
-    });
-  </script>
+     <script type="text/javascript">
+  //   $(window).load(function() { // makes sure the whole site is loaded
+  //     $('#preloader').delay(4750).fadeOut('fast'); // will fade out the white DIV that covers the website.
+  //     $('body').delay(350).css({'overflow':'visible'});
+  //   });
+     </script>
 
   <!-- Giphy API -->
-  <script type="text/javascript">
-    var giphy = $.get("http://api.giphy.com/v1/gifs/search?q=celebrate&rating=g&api_key=dc6zaTOxFJmzC&limit=70");
-    giphy.done(function(data) { 
-      var rando = Math.floor((Math.random() * 49) + 1);
-      $(document).ready(function(){
-        $('#background').append("<img src='"+ data.data[rando].images.original.url + "'> ");
-      });
-    }); 
-  </script>
+     <script type="text/javascript">
+  //   var giphy = $.get("http://api.giphy.com/v1/gifs/search?q=celebrate&rating=g&api_key=dc6zaTOxFJmzC&limit=70");
+  //   giphy.done(function(data) { 
+  //     var rando = Math.floor((Math.random() * 49) + 1);
+  //     $(document).ready(function(){
+  //       $('#background').append("<img src='"+ data.data[rando].images.original.url + "'> ");
+  //     });
+  //   }); 
+     </script>
 
   <!-- Foursquare Check Ins -->
   <script type="text/javascript">
